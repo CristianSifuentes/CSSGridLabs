@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Da Vinci Grid Gallery</title>
+    <link rel="preconnect" href="https://images.unsplash.com" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="grain"></div>
+    <header class="topbar">
+      <p class="label">[ responsive grid gallery ]</p>
+      <h1>Da Vinci Minimal</h1>
+      <p class="subtitle">A scrolling art wall crafted with CSS Grid, advanced effects, and motion.</p>
+    </header>
+
+    <main class="app-shell">
+      <aside class="panel panel-left">
+        <p class="panel-title">switch layout</p>
+        <div class="stack" role="group" aria-label="Gallery layout selector">
+          <button class="toggle is-active" data-layout="layout-a">grid A</button>
+          <button class="toggle" data-layout="layout-b">grid B</button>
+          <button class="toggle" data-layout="layout-c">grid C</button>
+        </div>
+      </aside>
+
+      <section class="gallery-wrap">
+        <div class="gallery layout-a" id="gallery">
+          <article class="card hero"><img src="https://images.unsplash.com/photo-1472396961693-142e6e269027?auto=format&fit=crop&w=1200&q=80" alt="Deer in the wild" loading="lazy"/></article>
+          <article class="card tall"><img src="https://images.unsplash.com/photo-1462438456745-eb9cb8a2f32f?auto=format&fit=crop&w=900&q=80" alt="Woman walking through nature" loading="lazy"/></article>
+          <article class="card wide"><img src="https://images.unsplash.com/photo-1511497584788-876760111969?auto=format&fit=crop&w=1200&q=80" alt="Foggy forest" loading="lazy"/></article>
+          <article class="card medium"><img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1000&q=80" alt="Mountain range" loading="lazy"/></article>
+          <article class="card medium"><img src="https://images.unsplash.com/photo-1470770841072-f978cf4d019e?auto=format&fit=crop&w=900&q=80" alt="Forest river reflection" loading="lazy"/></article>
+          <article class="card tall"><img src="https://images.unsplash.com/photo-1463320898484-cdee8141c787?auto=format&fit=crop&w=900&q=80" alt="Close-up flowers" loading="lazy"/></article>
+          <article class="card medium"><img src="https://images.unsplash.com/photo-1448375240586-882707db888b?auto=format&fit=crop&w=1000&q=80" alt="Deep woods" loading="lazy"/></article>
+          <article class="card wide"><img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=1200&q=80" alt="Night sky over mountains" loading="lazy"/></article>
+          <article class="card medium"><img src="https://images.unsplash.com/photo-1431794062232-2a99a5431c6c?auto=format&fit=crop&w=1000&q=80" alt="Tea table still life" loading="lazy"/></article>
+          <article class="card tall"><img src="https://images.unsplash.com/photo-1453217588061-42f4b4b3f6a0?auto=format&fit=crop&w=900&q=80" alt="Vintage bicycle in field" loading="lazy"/></article>
+          <article class="card medium"><img src="https://images.unsplash.com/photo-1454372182658-c712e4c5a1db?auto=format&fit=crop&w=1000&q=80" alt="Hand and wildflowers" loading="lazy"/></article>
+          <article class="card medium"><img src="https://images.unsplash.com/photo-1455659817273-f96807779a8a?auto=format&fit=crop&w=1000&q=80" alt="Portrait by old window" loading="lazy"/></article>
+        </div>
+      </section>
+
+      <aside class="panel panel-right">
+        <p class="panel-title">run effect</p>
+        <div class="stack" role="group" aria-label="Image effect selector">
+          <button class="toggle fx is-active" data-effect="fx-classic">classic</button>
+          <button class="toggle fx" data-effect="fx-noir">noir</button>
+          <button class="toggle fx" data-effect="fx-sepia">sepia</button>
+          <button class="toggle fx" data-effect="fx-glow">glow</button>
+          <button class="toggle fx" data-effect="fx-etched">etched</button>
+          <button class="toggle fx" data-effect="fx-dream">dream</button>
+        </div>
+      </aside>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
