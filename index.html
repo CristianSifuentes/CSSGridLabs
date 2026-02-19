@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Da Vinci Masonry Gallery</title>
+    <link rel="preconnect" href="https://picsum.photos" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="grain"></div>
+    <header class="topbar">
+      <p class="label">[ masonry-inspired minimal gallery ]</p>
+      <h1>Da Vinci Minimal</h1>
+      <p class="subtitle">Fluid scrolling, curated rhythm, and resilient image rendering.</p>
+    </header>
+
+    <main class="app-shell">
+      <aside class="panel panel-left">
+        <p class="panel-title">switch layout</p>
+        <div class="stack" role="group" aria-label="Gallery layout selector">
+          <button class="toggle is-active" data-layout="layout-masonry">masonry</button>
+          <button class="toggle" data-layout="layout-cinematic">cinematic</button>
+          <button class="toggle" data-layout="layout-editorial">editorial</button>
+        </div>
+      </aside>
+
+      <section class="gallery-wrap">
+        <div class="gallery layout-masonry" id="gallery">
+          <article class="card" data-size="lg"><img src="https://picsum.photos/id/10/1400/900" alt="Mountain valley" loading="lazy" /></article>
+          <article class="card" data-size="tall"><img src="https://picsum.photos/id/64/900/1400" alt="Forest portrait orientation" loading="lazy" /></article>
+          <article class="card" data-size="md"><img src="https://picsum.photos/id/1011/1200/800" alt="Lake and mountains" loading="lazy" /></article>
+          <article class="card" data-size="sm"><img src="https://picsum.photos/id/1025/800/1100" alt="Wildlife portrait" loading="lazy" /></article>
+          <article class="card" data-size="md"><img src="https://picsum.photos/id/1039/1200/900" alt="River stream in woods" loading="lazy" /></article>
+          <article class="card" data-size="tall"><img src="https://picsum.photos/id/1040/900/1400" alt="Canyon cliffs" loading="lazy" /></article>
+          <article class="card" data-size="sm"><img src="https://picsum.photos/id/106/900/700" alt="Foggy forest path" loading="lazy" /></article>
+          <article class="card" data-size="md"><img src="https://picsum.photos/id/119/1200/850" alt="Mountain road" loading="lazy" /></article>
+          <article class="card" data-size="sm"><img src="https://picsum.photos/id/152/1000/720" alt="Ocean and horizon" loading="lazy" /></article>
+          <article class="card" data-size="tall"><img src="https://picsum.photos/id/188/900/1400" alt="Sunlit pines" loading="lazy" /></article>
+          <article class="card" data-size="md"><img src="https://picsum.photos/id/201/1200/820" alt="Desert ridge" loading="lazy" /></article>
+          <article class="card" data-size="sm"><img src="https://picsum.photos/id/214/920/700" alt="Rocky cliff face" loading="lazy" /></article>
+          <article class="card" data-size="md"><img src="https://picsum.photos/id/228/1200/880" alt="Calm lake pier" loading="lazy" /></article>
+          <article class="card" data-size="sm"><img src="https://picsum.photos/id/237/900/740" alt="Black dog portrait" loading="lazy" /></article>
+          <article class="card" data-size="tall"><img src="https://picsum.photos/id/250/900/1450" alt="Bridge over water" loading="lazy" /></article>
+          <article class="card" data-size="md"><img src="https://picsum.photos/id/292/1200/840" alt="Cliffside vegetation" loading="lazy" /></article>
+          <article class="card" data-size="sm"><img src="https://picsum.photos/id/310/900/680" alt="Path in trees" loading="lazy" /></article>
+          <article class="card" data-size="md"><img src="https://picsum.photos/id/377/1200/860" alt="Snowy mountain line" loading="lazy" /></article>
+          <article class="card" data-size="sm"><img src="https://picsum.photos/id/433/900/700" alt="Wildflowers macro" loading="lazy" /></article>
+          <article class="card" data-size="md"><img src="https://picsum.photos/id/433/1200/850?2" alt="Wildflowers field" loading="lazy" /></article>
+          <article class="card" data-size="tall"><img src="https://picsum.photos/id/452/900/1400" alt="Pine forest tall frame" loading="lazy" /></article>
+          <article class="card" data-size="sm"><img src="https://picsum.photos/id/490/900/710" alt="Coastline texture" loading="lazy" /></article>
+          <article class="card" data-size="md"><img src="https://picsum.photos/id/535/1200/830" alt="Island and sea" loading="lazy" /></article>
+          <article class="card" data-size="sm"><img src="https://picsum.photos/id/589/920/700" alt="Cloudy mountain" loading="lazy" /></article>
+        </div>
+      </section>
+
+      <aside class="panel panel-right">
+        <p class="panel-title">run effect</p>
+        <div class="stack" role="group" aria-label="Image effect selector">
+          <button class="toggle fx is-active" data-effect="fx-classic">classic</button>
+          <button class="toggle fx" data-effect="fx-noir">noir</button>
+          <button class="toggle fx" data-effect="fx-sepia">sepia</button>
+          <button class="toggle fx" data-effect="fx-glow">glow</button>
+          <button class="toggle fx" data-effect="fx-etched">etched</button>
+          <button class="toggle fx" data-effect="fx-dream">dream</button>
+        </div>
+      </aside>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
